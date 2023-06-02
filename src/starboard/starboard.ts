@@ -14,7 +14,7 @@ import {
     StarboardGuild,
 } from "./starboard.interfaces";
 
-export class Starboard {
+export class StarboardClient {
     public client: Client;
     public guilds: StarboardGuild[];
     public cache: Collection<Snowflake, starMessageData[]> = new Collection();
