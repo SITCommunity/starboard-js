@@ -1,6 +1,6 @@
 {
     "name": "starboard-js",
-    "version": "1.0.1",
+    "version": "1.0.2",
     "description": "starboard-js used for who want add starboard feature to the bot",
     "main": "./dist/index.js",
     "types": "./dist/index.d.ts",

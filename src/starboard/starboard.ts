@@ -20,11 +20,11 @@ export class StarboardClient {
     public cache: Collection<Snowflake, starMessageData[]> = new Collection();
 
     constructor(options: StarboardOptions) {
+        if (!options.client) throw new Error("Client is required in the options.");
         this.client = options.client;
         this.guilds = options.Guilds || [];
         this.client.on("ready", () => this.cacheData());
     };
-
     public config = {
         guilds: {
             set: (StarboardGuilds: StarboardGuild[]) => {
