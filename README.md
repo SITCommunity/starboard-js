@@ -59,14 +59,13 @@ client.on(Events.MessageReactionRemove, (reaction) => {
 ## Join our Discord server
   <a href="https://discord.gg/qpT2AeYZRN" target="_blank"><img alt="Discord" src="https://img.shields.io/discord/984857299858382908?label=CyraTeam&logo=discord"></a>
 
-## Staff
-- [@brokenedtzjs](https://github.com/brokenedtzjs) Founder starboard-js
+## Contributor
+<div align="center">
+<p href="https://github.com/brokenedtzjs">brokenedtzjs</p>
+</div>
 
 ## License & Copyright
 ```
 This Project under MIT License
-Copyright (c) 2023-present CyraTeam
+© 2019 - 2023 CyraTeam. All Rights Reserved
 ```
-
-## Notes
-- This package is modified from [reconlx](https://www.npmjs.com/package/reconlx) package, i make this because not updated the package for long time, and i modified this package for latest discord.js version.
