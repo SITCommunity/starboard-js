@@ -1,51 +1,50 @@
 {
-    "name": "starboard-js",
-    "version": "1.0.2",
-    "description": "starboard-js used for who want add starboard feature to the bot",
-    "main": "./dist/index.js",
-    "types": "./dist/index.d.ts",
-    "scripts": {
-      "test": "echo \"Error: no test specified\" && exit 1"
-    },
-    "repository": {
-      "type": "git",
-      "url": "git+https://github.com/CyraTeam/starboard-js.git"
-    },
-    "publishConfig": {
-      "access": "public"
-    },
-    "keywords": [
-      "discord",
-      "discord-bot",
-      "discordjs",
-      "starboard-js",
-      "discord-starboard",
-      "bot-starboard",
-      "starboard"
+  "name": "starboard-js",
+  "version": "1.0.3",
+  "description": "starboard-js used for who want add starboard feature to the bot",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CyraTeam/starboard-js.git"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "keywords": [
+    "discord",
+    "discord-bot",
+    "discordjs",
+    "starboard-js",
+    "discord-starboard",
+    "bot-starboard",
+    "starboard"
+  ],
+  "author": "brokenedtz",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/CyraTeam/starboard-js/issues"
+  },
+  "homepage": "https://github.com/CyraTeam/starboard-js#readme",
+  "dependencies": {
+    "node-fetch": "^3.3.1"
+  },
+  "devDependencies": {
+    "discord.js": "^14.9.0"
+  },
+  "nano-staged": {
+    "*.ts": [
+      "prettier --write",
+      "eslint"
     ],
-    "author": "brokenedtz",
-    "license": "MIT",
-    "bugs": {
-      "url": "https://github.com/CyraTeam/starboard-js/issues"
-    },
-    "homepage": "https://github.com/CyraTeam/starboard-js#readme",
-    "dependencies": {
-      "node-fetch": "^3.3.1"
-    },
-    "devDependencies": {
-      "discord.js": "^14.9.0"
-    },
-    "nano-staged": {
-      "*.ts": [
-        "prettier --write",
-        "eslint"
-      ],
-      "*.{json,yml,yaml,md}": [
-        "prettier --write"
-      ]
-    },
-    "engines": {
-      "node": ">=16.9.0"
-    },
-    "packageManager": "yarn@3.2.0"
+    "*.{json,yml,yaml,md}": [
+      "prettier --write"
+    ]
+  },
+  "engines": {
+    "node": ">=16.9.0"
   }
+}

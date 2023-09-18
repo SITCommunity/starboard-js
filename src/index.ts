@@ -1,1 +1,1 @@
-export { StarboardClient, StarboardOptions, StarboardGuild, StarboardGuildOptions, starMessageData } from "./starboard";
+export { StarboardClient, StarboardClientOptions, StarboardGuild, StarboardGuildOptions, starMessageData } from "./starboard";

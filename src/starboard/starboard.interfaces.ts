@@ -1,5 +1,5 @@
 import { Client, Snowflake } from "discord.js";
-export interface StarboardOptions {
+export interface StarboardClientOptions {
     /**
      * Discord Client
      */

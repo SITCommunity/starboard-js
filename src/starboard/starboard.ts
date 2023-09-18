@@ -10,7 +10,7 @@ import {
 } from "discord.js";
 import {
     starMessageData,
-    StarboardOptions,
+    StarboardClientOptions,
     StarboardGuild,
 } from "./starboard.interfaces";
 
@@ -19,7 +19,7 @@ export class StarboardClient {
     public guilds: StarboardGuild[];
     public cache: Collection<Snowflake, starMessageData[]> = new Collection();
 
-    constructor(options: StarboardOptions) {
+    constructor(options: StarboardClientOptions) {
         if (!options.client) throw new Error("Client is required in the options.");
         this.client = options.client;
         this.guilds = options.Guilds || [];
@@ -84,7 +84,7 @@ export class StarboardClient {
             content: `⭐ **${starCount}** ${message.channel}`,
             embeds: [
                 new EmbedBuilder()
-                    .setAuthor({ name: message.author.tag, iconURL: message.author.displayAvatarURL({ dynamic: true }) })
+                    .setAuthor({ name: message.author.tag, iconURL: message.author.displayAvatarURL({ dynamic: true })})
                     .setColor('Random')
                     .setDescription(message.content)
                     .addFields({ name: "Source", value: `[Jump!](${message.url})` })
