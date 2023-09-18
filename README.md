@@ -61,7 +61,7 @@ client.on(Events.MessageReactionRemove, (reaction) => {
 
 ## Contributor
 <div align="center">
-<p href="https://github.com/brokenedtzjs">brokenedtzjs</p>
+<a href="https://github.com/brokenedtzjs">brokenedtzjs</a>
 </div>
 
 ## License & Copyright
