@@ -39,20 +39,21 @@ const client = ({
 
 const starboard = new Starboard({
     client: client,
-})
-module.exports = starboard;
+});
+client.starboard = starboard;
+
+module.exports = client;
 ```
 - starboard.js
 ```js
-const client = require('your bot.js folder');
+const client = require('your bot.js');
 const { Events } = require('discord.js');
-const starboard = require('your bot.js folder');
 
 client.on(Events.MessageReactionAdd, (reaction) => {
-    starboard.listener(reaction);
+    client.starboard.listener(reaction);
 });
 client.on(Events.MessageReactionRemove, (reaction) => {
-    starboard.listener(reaction);
+    client.starboard.listener(reaction);
 });
 ```
 
@@ -60,9 +61,7 @@ client.on(Events.MessageReactionRemove, (reaction) => {
   <a href="https://discord.gg/qpT2AeYZRN" target="_blank"><img alt="Discord" src="https://img.shields.io/discord/984857299858382908?label=CyraTeam&logo=discord"></a>
 
 ## Contributor
-<div align="center">
-<a href="https://github.com/brokenedtzjs">brokenedtzjs</a>
-</div>
+<div align="center"><a href="https://github.com/brokenedtzjs">brokenedtzjs</a></div>
 
 ## License & Copyright
 ```
